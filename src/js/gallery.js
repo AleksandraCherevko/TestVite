@@ -72,3 +72,12 @@ const createMarkup = images => {
 
 const markup = images.map(createMarkup).join('');
 gallery.insertAdjacentHTML('beforeend', markup);
+
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionDelay: 250,
+  captions: true,
+  captionsData: 'alt',
+});
