@@ -78,6 +78,9 @@ import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
-  captions: true,
   captionsData: 'alt',
+});
+
+lightbox.on('error.simplelightbox', e => {
+  console.error('Ошибка загрузки изображения:', e);
 });
