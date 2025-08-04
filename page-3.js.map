@@ -1,1 +1,1 @@
-{"version":3,"file":"page-3.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}
+{"version":3,"file":"page-3.js","sources":["../src/js/form.js"],"sourcesContent":["const form = document.querySelector('.feedback-form');\nconst formData = { email: '', message: '' };\n\nlocalStorage.setItem('formData', JSON.stringify(formData));\nconst parseFormData = JSON.parse()"],"names":["formData"],"mappings":"wFAAa,SAAS,cAAc,gBAAgB,EACpD,MAAMA,EAAW,CAAE,MAAO,GAAI,QAAS,EAAE,EAEzC,aAAa,QAAQ,WAAY,KAAK,UAAUA,CAAQ,CAAC,EACnC,KAAK,MAAK"}
