@@ -9,7 +9,6 @@ if (savedData) {
   emailInput.value = savedData.email || '';
   messageInput.value = savedData.message || '';
 }
-
 form.addEventListener('submit', onFormSubmit);
 form.addEventListener('input', onFormInput);
 
